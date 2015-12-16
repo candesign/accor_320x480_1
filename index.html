@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<!--[if gte IE 9]><style type="text/css">.gradient { filter: none }</style><![endif]-->
+
+<script type="text/javascript">	
+		var i=0;
+		var timer=function(){  
+			var count=++i;
+			document.getElementById("banner").className="s"+count; 
+		}
+		setInterval(timer, 400);		
+    </script>
+
+<!--MEDIA REGIONALNE skrypt-->
+<script>
+		var parsed = (document.location.href.split('#')[1]||'').split('&');
+		var params = parsed.reduce(function (params, param) {
+		var param = param.split('=');
+		params[param[0]] = decodeURIComponent(param.slice(1).join('='));
+		return params;
+		}, {});
+</script>
+<title>Accor OnlyOn</title>
+</head>
+<body>
+<div id="banner" class="s0">
+  <div onclick="javascript:window.open(params.clickTag)" style="cursor:pointer;">
+    <div class="container">
+      <div class="banner_background"></div>
+      <div class="text1"></div>
+      <div class="text2"></div>
+      <div class="text3"></div>
+      <div class="icon_glow"></div>
+      <div class="icon1"></div>
+      <div class="icon2"></div>
+      <div class="text4"></div>
+      <div class="text5"></div>
+      <div class="logo"></div>
+      <div class="button_apla"></div>
+      <div class="button"></div>
+      <div class="logo_onlyon"></div>
+      <div class="text6"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

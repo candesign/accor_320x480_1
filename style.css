@@ -1,0 +1,306 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#banner {
+	width: 320px;
+	height: 480px;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #999;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a img {
+	border: 1;  /* ramka */
+}
+a {
+	text-decoration: none; /* teksty */
+}
+.container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(bg_top.png) repeat-x;
+}
+.click {
+	width: 100%; /* proklik pres celou plochu banneru */
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+}
+/* ------------------------ LOGOTYPE ------------------------ */
+.logo {
+	position: absolute;
+	top: 0px;
+	background: url(logotype.gif);
+	width: 320px;
+	height: 70px;
+}
+.logo_onlyon {
+	position: absolute;
+	bottom: 190px;
+	left: 35px;
+	background: url(logotype_onlyon.gif);
+	width: 225px;
+	height: 42px;
+	opacity: 0;
+}
+/* ------------------------ BACKGROUND ------------------------ */
+.banner_background {
+	background: url(background.jpg);
+	width: 320px;
+	height: 640px;
+	z-index: -1;
+	-webkit-transition: background-position 1s ease;
+	-moz-transition: background-position 1s ease;
+	-o-transition: background-position 1s ease;
+	transition: background-position 1s ease;
+}
+
+/* ------------------------ BUTTON & APLA ------------------------ */
+.button {
+	position: absolute;
+	left: 30px;
+	bottom: 60px;
+	background: url(button.gif);
+	width: 261px;
+	height: 66px;
+}
+.button_apla {
+	position: absolute;
+	bottom: -60px;
+	background: url(button_apla.gif);
+	width: 320px;
+	height: 200px;
+}
+.text1 {
+	position: absolute;
+	background: url(text1.png);
+	width: 271px;
+	height: 65px;
+	left: 25px;
+	top: 85px;
+	opacity: 0;
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-ms-transform: scale(4);
+	-o-transform: scale(4);
+	transform: scale(4);
+}
+.text2 {
+	position: absolute;
+	background: url(text2.png);
+	width: 159px;
+	height: 24px;
+	left: 80px;
+	top: 300px;
+	opacity: 0;
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-ms-transform: scale(4);
+	-o-transform: scale(4);
+	transform: scale(4);
+}
+.text3 {
+	position: absolute;
+	background: url(text3.png);
+	width: 79px;
+	height: 22px;
+	left: 120px;
+	top: 335px;
+	opacity: 0;
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-ms-transform: scale(4);
+	-o-transform: scale(4);
+	transform: scale(4);
+}
+.text4 {
+	position: absolute;
+	background: url(text4.png);
+	width: 243px;
+	height: 105px;
+	left: 38px;
+	top: 50px;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.text5 {
+	position: absolute;
+	background: url(text5.png);
+	width: 268px;
+	height: 273px;
+	left: 26px;
+	top: 90px;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.text6 {
+	position: absolute;
+	background: url(text6.gif);
+	width: 300px;
+	height: 35px;
+	left: 10px;
+	bottom: 15px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.icon1 {
+	position: absolute;
+	background: url(icon1.png);
+	width: 113px;
+	height: 115px;
+	left: 104px;
+	top: 170px;
+	opacity: 0;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	transform: scaleX(0);
+}
+.icon2 {
+	position: absolute;
+	background: url(icon2.png);
+	width: 113px;
+	height: 115px;
+	left: 104px;
+	top: 170px;
+	opacity: 0;
+	
+}
+.icon_glow {
+	position: absolute;
+	background: url(icon_glow.png);
+	width: 200px;
+	height: 200px;
+	left: 60px;
+	top: 140px;
+	opacity: 0;
+	
+}
+/* ------------------------- OBJECT ANIMATION CONTROL ------------------------ */
+.text1, .text2, .text3, .text4, .text5, .text6, .button, .button_apla, .logo_onlyon {
+	-webkit-transition: all 1s ease; /* Saf3.2+, Chrome */
+	-moz-transition: all 1s ease; /* FF4+ */
+	-ms-transition: all 1s ease; /* IE10 */
+	-o-transition: all 1s ease; /* Opera 10.5+ */
+	transition: all 1s ease;
+}
+.icon1, .icon2, .icon_glow {
+	-webkit-transition: all 1s ease; /* Saf3.2+, Chrome */
+	-moz-transition: all 1s ease; /* FF4+ */
+	-ms-transition: all 1s ease; /* IE10 */
+	-o-transition: all 1s ease; /* Opera 10.5+ */
+	transition: all 1s ease;
+}
+
+/* ------------------------ OBJECT ANIMATION ------------------------ */
+.s5 .icon2 {
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-ms-transform: scale(4);
+	-o-transform: scale(4);
+	transform: scale(4);
+}
+.s1 .text1, .s2 .text1, .s3 .text1, .s4 .text1, .s5 .text1, .s6 .text1, .s7 .text1, .s8 .text1, .s9 .text1, .s10 .text1, .s11 .text1, .s12 .text1, .s13 .text1, .s14 .text1,
+.s5 .text2, .s6 .text2, .s7 .text2, .s8 .text2, .s9 .text2, .s10 .text2, .s11 .text2, .s12 .text2, .s13 .text2, .s14 .text2,
+.s6 .text3, .s7 .text3, .s8 .text3, .s9 .text3, .s10 .text3, .s11 .text3, .s12 .text3, .s13 .text3, .s14 .text3,
+.s1 .icon_glow, .s2 .icon_glow, .s6 .icon_glow, .s7 .icon_glow, .s8 .icon_glow, .s9 .icon_glow, .s10 .icon_glow, .s11 .icon_glow, .s12 .icon_glow, .s13 .icon_glow, 
+.s1 .icon1, .s2 .icon1, .s3 .icon1, .s4 .icon1, .s5 .icon1, .s6 .icon1,
+.s6 .icon2, .s7 .icon2, .s8 .icon2, .s9 .icon2, .s10 .icon2, .s11 .icon2, .s12 .icon2, .s13 .icon2, .s14 .icon2 {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+
+.s15 .text1, .s15 .text2, .s15 .text3, .s16 .text1, .s16 .text2, .s16 .text3 {
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0;
+}
+.s6 .icon1 {
+	opacity: 0;
+}
+.s15 .icon_glow {
+	-webkit-transform: scale(8);
+	-moz-transform: scale(8);
+	-ms-transform: scale(8);
+	-o-transform: scale(8);
+	transform: scale(8);
+}
+.s20 .icon2 {
+	opacity: 0;
+}
+
+/* APLA, BUTTON, LOGOTYPE ONLY ON */
+.s0 .button, .s1 .button, .s2 .button, .s3 .button, .s4 .button, .s5 .button {
+	bottom: -101px;
+}
+.s0 .button_apla, .s1 .button_apla, .s2 .button_apla, .s3 .button_apla, .s4 .button_apla {
+	bottom: -301px;
+}
+.s0 .logo_onlyon, .s1 .logo_onlyon, .s2 .logo_onlyon, .s3 .logo_onlyon, .s4 .logo_onlyon, .s5 .logo_onlyon, .s6 .logo_onlyon, .s7 .logo_onlyon, .s8 .logo_onlyon, .s9 .logo_onlyon, .s10 .logo_onlyon, .s11 .logo_onlyon, .s12 .logo_onlyon, .s13 .logo_onlyon, .s14 .logo_onlyon {
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	transform: scale(0.2);
+	opacity: 0;
+}
+/* go up 1 */
+.s6 .button, .s7 .button, .s8 .button, .s9 .button, .s10 .button, .s11 .button, .s12 .button {
+	bottom: 20px;
+}
+.s5 .button_apla, .s6 .button_apla, .s7 .button_apla, .s8 .button_apla, .s9 .button_apla, .s10 .button_apla, .s11 .button_apla, .s12 .button_apla {
+	bottom: -100px;
+}
+/* go up 2 */
+.s13 .button_apla, .s14 .button_apla, .s15 .button_apla, .s16 .button_apla, .s17 .button_apla, .s18 .button_apla, .s19 .button_apla, .s20 .button_apla, .s21 .button_apla, .s22 .button_apla {
+	bottom: -60px;
+}
+/* LAST TEXT */
+.s0 .text4, .s1 .text4, .s2 .text4, .s3 .text4, .s4 .text4, .s5 .text4, .s6 .text4, .s7 .text4, .s8 .text4, .s9 .text4, .s10 .text4, .s11 .text4, .s12 .text4, .s13 .text4,
+.s0 .text5, .s1 .text5, .s2 .text5, .s3 .text5, .s4 .text5, .s5 .text5, .s6 .text5, .s7 .text5, .s8 .text5, .s9 .text5, .s10 .text5, .s11 .text5, .s12 .text5, .s13 .text5, .s14 .text5
+ {
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-ms-transform: scale(4);
+	-o-transform: scale(4);
+	transform: scale(4);
+	opacity: 0;
+}
+.s0 .text6, .s1 .text6, .s2 .text6, .s3 .text6, .s4 .text6, .s5 .text6, .s6 .text6, .s7 .text6, .s8 .text6, .s9 .text6, .s10 .text6, .s11 .text6, .s12 .text6, .s13 .text6, .s14 .text6  
+{
+	bottom: -45px;
+}
+/* CTA puls */
+.s23 .button, .s27 .button, .s31 .button
+ {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
